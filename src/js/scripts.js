@@ -5,3 +5,12 @@
 // - Do not use onclick - use addEventListener instead
 // - Run npm run test regularly to check autograding
 // - You'll need to link this file to your HTML :)
+
+const showDish = document.querySelector('.hide')
+
+function showRecommend() {
+	showDish.classList.toggle('hide')
+	showDish.classList.toggle('show')
+}
+const showDishButton = document.querySelector("#show-recommended")
+showDishButton.addEventListener("click", showRecommend)
